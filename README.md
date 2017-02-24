@@ -398,10 +398,38 @@ Example response:
 
 BSG provides an API to get the price information of your account.
 
+	# HLR Price
 	$response = $api->price('hlr');
+	# SMS Price
 	$response = $api->price('sms');
+	#Viber price by tarif ID
 	$response = $api->price('viber'=>1);
 
+Example response:
+
+	{
+          'error' => 0,
+          'errorDescription' => 'No errors',
+          'prices' => [
+                        {
+                          'currency' => 'EUR',
+                          'type' => 'viber',
+                          'country' => 'DE',
+                          'country_name' => 'Germany',
+                          'price' => '0.0200000',
+                          'mcc' => '262'
+                        },
+	# .....
+                        {
+                          'country' => 'UA',
+                          'type' => 'viber',
+                          'price' => '0.0065000',
+                          'mcc' => '255',
+                          'country_name' => 'Ukraine',
+                          'currency' => 'EUR'
+                        },
+                      ]
+        };
 
 
 
@@ -431,4 +459,3 @@ BSG provides an API to get the price information of your account.
 
 
 
-///////
