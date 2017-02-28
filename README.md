@@ -1,6 +1,11 @@
 # bsg-perl
 This repository contains the open source Perl client for BSG's REST API.
 
+# Requirements
+
+- [Sign up](https://bsg.world) for a free account
+- Get `access_key`
+
 ## API function "balance"
 BSG provides an API to get the balance information of your account.
 
