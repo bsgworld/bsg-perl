@@ -5,7 +5,7 @@ use JSON;
 
 package BSGAPI;
 
-my $urlApiPoint = 'https://app.bsg.hk/rest';
+my $urlApiPoint = 'https://api.bsg.world/rest';
 
 sub new {
 	my $self = shift;
